@@ -3,7 +3,7 @@
     <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
   </a>
   <a href="https://openai.com">
-    <img alt="OpenAI" src="https://technosports.co.in/wp-content/uploads/2020/12/open-ai.png" width="60" />
+    <img alt="OpenAI" src="https://dwglogo.com/wp-content/uploads/2019/03/1600px-OpenAI_logo-1024x705.png" width="60" />
   </a>
   <a href="https://firebase.google.com">
     <img alt="Firebase" src="https://www.gstatic.com/mobilesdk/160503_mobilesdk/logo/2x/firebase_28dp.png" width="60" />
