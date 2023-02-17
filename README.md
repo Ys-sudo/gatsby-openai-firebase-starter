@@ -19,11 +19,12 @@
 
 [![Made with Node.js](https://img.shields.io/badge/Node.js->=15-blue?logo=node.js&logoColor=white)](https://nodejs.org "Go to Node.js homepage")
 
-[![ys-sudo - gatsby-openai-firebase-starter](https://img.shields.io/static/v1?label=ys-sudo&message=gatsby-openai-firebase-starter&color=9c27b0&logo=github)](https://github.com/ys-sudo/gatsby-openai-firebase-starter "Go to GitHub repo")
+
 [![stars - gatsby-openai-firebase-starter](https://img.shields.io/github/stars/ys-sudo/gatsby-openai-firebase-starter?style=social)](https://github.com/ys-sudo/gatsby-openai-firebase-starter)
 [![forks - gatsby-openai-firebase-starter](https://img.shields.io/github/forks/ys-sudo/gatsby-openai-firebase-starter?style=social)](https://github.com/ys-sudo/gatsby-openai-firebase-starter)
 
 [![License](https://img.shields.io/badge/License-BSD-9c27b0)](#license)
+[![ys-sudo - gatsby-openai-firebase-starter](https://img.shields.io/static/v1?label=ys-sudo&message=gatsby-openai-firebase-starter&color=9c27b0&logo=github)](https://github.com/ys-sudo/gatsby-openai-firebase-starter "Go to GitHub repo")
 
 [![Use this template](https://img.shields.io/badge/Generate-Use_this_template-2ea44f?style=for-the-badge)](https://github.com/ys-sudo/gatsby-openai-firebase-starter/generate)
 
