@@ -57,6 +57,6 @@ _who asks not stray [official Open AI public Q&A archive project](https://open-q
 - All the dirty setup work have been done for you! Configure and experiment with the repository.
 
 ## Have fun and make somethig awesome!
-- Do you like it? Leave a star or follow!
+- Do you like it? Leave a star, follow or support me on ko-fi! Any help greatly appriciated, so i can make more software like this.
 
-
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/Y8Y4IT6E0)
