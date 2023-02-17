@@ -1,12 +1,12 @@
 <p align="center">
   <a href="https://gatsbyjs.com">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
+    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" height="60" />
   </a>
   <a href="https://openai.com">
-    <img alt="OpenAI" src="https://dwglogo.com/wp-content/uploads/2019/03/1600px-OpenAI_logo-1024x705.png" width="60" />
+    <img alt="OpenAI" src="https://dwglogo.com/wp-content/uploads/2019/03/1600px-OpenAI_logo-1024x705.png" height="60" />
   </a>
   <a href="https://firebase.google.com">
-    <img alt="Firebase" src="https://www.gstatic.com/mobilesdk/160503_mobilesdk/logo/2x/firebase_28dp.png" width="60" />
+    <img alt="Firebase" src="https://www.gstatic.com/mobilesdk/160503_mobilesdk/logo/2x/firebase_28dp.png" height="60" />
   </a>
 </p>
 <h1 align="center">
