@@ -7,9 +7,7 @@ import './index.css'
 import { auth } from "../../config/firebase";
 import { signOut } from "firebase/auth";
 
-const about = () => {
-    navigate('/about')
-}
+
 const explore = () => {
     navigate('/archives')
 }
@@ -73,8 +71,8 @@ const AboutPage = () => {
     <Button variant="outlined" color="secondary" onClick={explore}>
     Q&A Archives
     </Button>
-    <Button variant="outlined" color="secondary" onClick={about}>
-    About
+    <Button variant="outlined" color="secondary" onClick={askAi}>
+    Ask a question
     </Button>
   </div>
 
