@@ -1,3 +1,4 @@
+<div align="center">
 <p align="center">
   <a href="https://gatsbyjs.com">
     <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" height="60" />
@@ -10,6 +11,7 @@
   </a>
 </p>
 <h1 align="center">
+👽 <br>
   Gatsby-OpenAI-Firebase-starter
 </h1>
 
@@ -23,12 +25,8 @@
 
 [![License](https://img.shields.io/badge/License-BSD-9c27b0)](#license)
 
-
-_Call-to-Action buttons_
-
-<div align="center">
-
 [![Use this template](https://img.shields.io/badge/Generate-Use_this_template-2ea44f?style=for-the-badge)](https://github.com/ys-sudo/gatsby-openai-firebase-starter/generate)
+
 
 
 The awesome alien technology now in your hands. Go make your own AI powered database with the Open AI node.js API. Authentication with firebase provided, publishing options, access restriction. Setup ready for production apps aiming to bring top - edge technologies together.   
@@ -80,3 +78,5 @@ _who asks not stray [official Open AI public Q&A archive project](https://open-q
 Released under [BSD](/LICENSE) by [@ys-sudo](https://github.com/ys-sudo).
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/Y8Y4IT6E0)
+
+</div>
