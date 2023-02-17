@@ -15,6 +15,22 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/44166e36-6e68-438a-b97a-6b3a7ca29ce4/deploy-status)](https://app.netlify.com/sites/open-q-and-ai/deploys)
 
+[![Made with Node.js](https://img.shields.io/badge/Node.js->=15-blue?logo=node.js&logoColor=white)](https://nodejs.org "Go to Node.js homepage")
+
+[![ys-sudo - gatsby-openai-firebase-starter](https://img.shields.io/static/v1?label=ys-sudo&message=gatsby-openai-firebase-starter&color=9c27b0&logo=github)](https://github.com/ys-sudo/gatsby-openai-firebase-starter "Go to GitHub repo")
+[![stars - gatsby-openai-firebase-starter](https://img.shields.io/github/stars/ys-sudo/gatsby-openai-firebase-starter?style=social)](https://github.com/ys-sudo/gatsby-openai-firebase-starter)
+[![forks - gatsby-openai-firebase-starter](https://img.shields.io/github/forks/ys-sudo/gatsby-openai-firebase-starter?style=social)](https://github.com/ys-sudo/gatsby-openai-firebase-starter)
+
+[![License](https://img.shields.io/badge/License-BSD-9c27b0)](#license)
+
+
+_Call-to-Action buttons_
+
+<div align="center">
+
+[![Use this template](https://img.shields.io/badge/Generate-Use_this_template-2ea44f?style=for-the-badge)](https://github.com/ys-sudo/gatsby-openai-firebase-starter/generate)
+
+
 The awesome alien technology now in your hands. Go make your own AI powered database with the Open AI node.js API. Authentication with firebase provided, publishing options, access restriction. Setup ready for production apps aiming to bring top - edge technologies together.   
 
 _who asks not stray [official Open AI public Q&A archive project](https://open-q-and-ai.netlify.app/archives)._
@@ -58,5 +74,9 @@ _who asks not stray [official Open AI public Q&A archive project](https://open-q
 
 ## Have fun and make something awesome!
 - Do you like it? Leave a star, follow or support me on ko-fi! Any help greatly appriciated, so i can make more software like this.
+
+## License
+
+Released under [BSD](/LICENSE) by [@ys-sudo](https://github.com/ys-sudo).
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/Y8Y4IT6E0)
