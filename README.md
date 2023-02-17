@@ -30,7 +30,7 @@
 
 
 
-## The awesome alien technology now in your hands. Go make your own AI powered database with the Open AI node.js API. Authentication with firebase provided, publishing options, access restriction. Setup ready for production apps aiming to bring top - edge technologies together.   
+The awesome alien technology now in your hands. Make your own AI powered database website with the OpenAI node.js API. Authentication with firebase provided, publishing options, access restriction. Setup ready for production apps aiming to bring top - edge technologies together now with artificial intelligence.   
 
 Public repository for the Open AI Q&A project. A public collection of questions asked by authorised members and answers provided by the text-davinci-003 model - developed and maintained by the OpenAI organization. Built with gatsby.js, openai-node, firebase, mui.
 
