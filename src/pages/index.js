@@ -13,6 +13,7 @@ import { auth } from "../../config/firebase";
 import Firebase from "../../config/firebase";
 import { signOut } from "firebase/auth";
 import { getDatabase, ref, update, onValue } from "firebase/database";
+import Typewriter from 'typewriter-effect';
 import Footer from "../components/footer"
 
 const logout = () => {
@@ -116,6 +117,18 @@ export default function Home() {
   <span><label>Dark mode</label><Switch {...label} onChange={setdarkMode} defaultChecked color="secondary" /></span>
   </div>
   <h2>Welcome to the OpenAI Q&A project.</h2>
+  <Typewriter
+      onInit={(typewriter) => {
+        typewriter.typeString("<span style='color:#9c27b0;font-size:2em;'>who asks not stray...</span>")
+          .pauseFor(2500)
+          .deleteAll()
+          .start();
+      }}
+      options={{
+        autoStart: true,
+        loop: true,
+      }}
+    />
   <div>
   <p>Type any questions you have, to be processed and answered by the
   text-davinci-003 model developed and maintained by the OpenAI organization. The questions and answers will be uploaded to the cloud database then returned on the <a className="secondary" href="/archives">archives page</a>.</p>

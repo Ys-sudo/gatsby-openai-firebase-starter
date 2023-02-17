@@ -9,6 +9,7 @@ import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Footer from "../components/footer"
+import Typewriter from 'typewriter-effect';
 
 import './index.css'
 import { auth } from "../../config/firebase";
@@ -53,6 +54,18 @@ const ThanksPage = () => {
   <span><label>Dark mode</label><Switch {...label} onChange={setdarkMode} defaultChecked color="secondary" /></span>
   </div>
   <h2>OpenAI - Q&A : Your message has been sent...</h2>
+  <Typewriter
+      onInit={(typewriter) => {
+        typewriter.typeString("<span style='color:#9c27b0;font-size:2em;'>who asks not stray...</span>")
+          .pauseFor(2500)
+          .deleteAll()
+          .start();
+      }}
+      options={{
+        autoStart: true,
+        loop: true,
+      }}
+    />
   <div>
   <p>Our team will soon contact you.</p>
   <p>Thank you, for your interest.</p>

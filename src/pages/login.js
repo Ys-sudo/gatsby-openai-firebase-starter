@@ -12,6 +12,7 @@ import Button from '@mui/material/Button'
 import Box from '@mui/material/Box'
 import './index.css'
 import Footer from "../components/footer"
+import Typewriter from 'typewriter-effect'
 /*import {
   GoogleSignInButton,
   FacebookSignInButton,
@@ -87,6 +88,18 @@ const LoginPage = () => {
     <Button color="secondary" variant="outlined" style={{position:'fixed',top:'10px',right:'10px',marginLeft:'10px',marginRight:'10px'}} onClick={home}><span id="log" className="small">ASK AI A QUESTION</span></Button>
     <h1 className="link-danger"><a href="/">OpenAI Q&A</a></h1>
     <h2 className="link-danger">log in to acess the project...</h2>
+    <Typewriter
+        onInit={(typewriter) => {
+          typewriter.typeString("<span style='color:#9c27b0;font-size:2em;'>who asks not stray...</span>")
+            .pauseFor(2500)
+            .deleteAll()
+            .start();
+        }}
+        options={{
+          autoStart: true,
+          loop: true,
+        }}
+      />
     <span><label>Dark mode</label><Switch {...label} onChange={setdarkMode} defaultChecked color="secondary" /></span>
 
     <div className="tab-content flexer" id="myTabContent" style={{maxWidth:'500px',justifyContent:'center'}}>

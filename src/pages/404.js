@@ -9,7 +9,7 @@ import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Footer from "../components/footer"
-
+import Typewriter from 'typewriter-effect';
 import './index.css'
 import { auth } from "../../config/firebase";
 import { signOut } from "firebase/auth";
@@ -53,6 +53,18 @@ const ErrorPage = () => {
   <span><label>Dark mode</label><Switch {...label} onChange={setdarkMode} defaultChecked color="secondary" /></span>
   </div>
   <h2>OpenAI - Q&A : page not found...</h2>
+  <Typewriter
+      onInit={(typewriter) => {
+        typewriter.typeString("<span style='color:#9c27b0;font-size:2em;'>who asks not stray...</span>")
+          .pauseFor(2500)
+          .deleteAll()
+          .start();
+      }}
+      options={{
+        autoStart: true,
+        loop: true,
+      }}
+    />
   <div>
   <p>You just landed in blank space...</p>
   <p>That sadness... well, never mind, it's time to go on.</p>

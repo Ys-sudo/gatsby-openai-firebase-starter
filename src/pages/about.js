@@ -6,7 +6,7 @@ import Switch from '@mui/material/Switch'
 import './index.css'
 import { auth } from "../../config/firebase";
 import { signOut } from "firebase/auth";
-
+import Typewriter from 'typewriter-effect';
 
 const explore = () => {
     navigate('/archives')
@@ -43,7 +43,7 @@ const AboutPage = () => {
 
   useEffect(() => {
         darkMode();
-      })
+      });
 
 
   return(
@@ -56,6 +56,18 @@ const AboutPage = () => {
   <span><label>Dark mode</label><Switch {...label} onChange={setdarkMode} defaultChecked color="secondary" /></span>
   </div>
   <h2>Learn about the project.</h2>
+  <Typewriter
+      onInit={(typewriter) => {
+        typewriter.typeString("<span style='color:#9c27b0;font-size:2em;'>who asks not stray...</span>")
+          .pauseFor(2500)
+          .deleteAll()
+          .start();
+      }}
+      options={{
+        autoStart: true,
+        loop: true,
+      }}
+    />
   <div>
   <p><a href="https://openai.com/api/pricing" style={{color:'red'}} target="_blank" rel="noopener noreferrer">Every request to the OpenAI model API costs real money</a>, so does the requests made to the <a href="https://firebase.google.com/pricing" style={{color:'red'}} target="_blank" rel="noopener noreferrer">firebase database</a>, because of that the access is restricted only for authorised personel. Everyone is welcome to browse the archives. But if the project generates traffic the database and requests will be quite expensive so every kind of donation is appriciated.</p>
   <p>We are looking forward to developing the project and making it even more awesome. The project is open-source and available on github for cloning as a starter template for free for everyone.</p>
