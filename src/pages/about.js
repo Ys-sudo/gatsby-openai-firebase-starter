@@ -7,6 +7,7 @@ import './index.css'
 import { auth } from "../../config/firebase";
 import { signOut } from "firebase/auth";
 import Typewriter from 'typewriter-effect';
+import Footer from "../components/footer"
 
 const explore = () => {
     navigate('/archives')
@@ -79,14 +80,7 @@ const AboutPage = () => {
 
 
   </div>
-  <div style={{display:'flex',position:'fixed',bottom:'15px',width:'100%',justifyContent:'space-evenly',flexWrap:'wrap'}}>
-    <Button variant="outlined" color="secondary" onClick={explore}>
-    Q&A Archives
-    </Button>
-    <Button variant="outlined" color="secondary" onClick={askAi}>
-    Ask a question
-    </Button>
-  </div>
+  <Footer />
 
 
   </>)

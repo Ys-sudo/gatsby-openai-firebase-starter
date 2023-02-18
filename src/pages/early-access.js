@@ -8,7 +8,7 @@ import { auth } from "../../config/firebase";
 import Firebase from "../../config/firebase";
 import { signOut } from "firebase/auth";
 import FormMsg from "../components/form"
-
+import Footer from "../components/footer"
 
 const about = () => {
     navigate('/about')
@@ -80,14 +80,7 @@ const EarlyaccessPage = () => {
 
 
   </div>
-  <div style={{display:'flex',position:'fixed',bottom:'15px',width:'100%',justifyContent:'space-evenly',flexWrap:'wrap'}}>
-    <Button variant="outlined" color="secondary" onClick={explore}>
-    Q&A Archives
-    </Button>
-    <Button variant="outlined" color="secondary" onClick={about}>
-    About
-    </Button>
-  </div>
+  <Footer />
 
 
   </>)

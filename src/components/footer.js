@@ -22,10 +22,8 @@ const Footer = () => {
     Early Access
     </Button>
   </div>
-  <div style={{position:'fixed',left:'10px',bottom:'75px'}}>
+  <div style={{position:'fixed',right:'10px',bottom:'55px'}}>
   <a style={{margin:'10px'}} href="https://github.com/ys-sudo/gatsby-openai-firebase-starter"><img src="https://img.shields.io/github/stars/ys-sudo/gatsby-openai-firebase-starter?style=social" alt="stars - gatsby-openai-firebase-starter" /></a>
-  <br />
-  <a style={{margin:'10px'}} href="https://github.com/ys-sudo/gatsby-openai-firebase-starter"><img src="https://img.shields.io/github/forks/ys-sudo/gatsby-openai-firebase-starter?style=social" alt="forks - gatsby-openai-firebase-starter" /></a>
   </div>
   </>
 )
