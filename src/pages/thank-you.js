@@ -46,7 +46,7 @@ const ThanksPage = () => {
       })
   return(
   <>
-  <div style={{width:'90%',padding:'10% 5%',minHeight:'600px'}}>
+  <div style={{width:'90%',padding:'50px 5%',minHeight:'600px'}}>
   <Button color="secondary" variant="outlined" style={{position:'fixed',top:'10px',right:'10px',marginLeft:'10px',marginRight:'10px'}} onClick={logout}><span id="log" className="small">Log out</span></Button>
   <Button color="secondary" variant="contained" style={{position:'fixed',top:'10px',left:'10px',marginLeft:'10px',marginRight:'10px'}} onClick={askAi}><span className="small">ASK AI A QUESTION</span></Button>
   <div style={{display:'flex',flexWrap:'wrap',alignItems:'baseline',justifyContent:'space-between'}}>

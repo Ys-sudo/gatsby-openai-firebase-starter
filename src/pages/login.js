@@ -83,10 +83,10 @@ const LoginPage = () => {
 
   return(
   <>
-    <div className="container-fluid malpals" style={{padding:'15%',paddingTop:'100px',textAlign:'center',display:'grid',justifyContent:'center'}}>
+    <div className="container-fluid malpals" style={{padding:'10%',paddingTop:'100px',textAlign:'center',display:'grid',justifyContent:'center'}}>
     <Button color="secondary" variant="contained" style={{position:'fixed',top:'10px',left:'10px',marginLeft:'10px',marginRight:'10px'}} onClick={explore}><span className="small">Explore Q&A's</span></Button>
     <Button color="secondary" variant="outlined" style={{position:'fixed',top:'10px',right:'10px',marginLeft:'10px',marginRight:'10px'}} onClick={home}><span id="log" className="small">ASK AI A QUESTION</span></Button>
-    <h1 className="link-danger"><a href="/">OpenAI Q&A</a></h1>
+    <h1 className="link-danger">OpenAI Q&A</h1>
     <h2 className="link-danger">log in to acess the project...</h2>
     <Typewriter
         onInit={(typewriter) => {
@@ -105,19 +105,18 @@ const LoginPage = () => {
     <div className="tab-content flexer" id="myTabContent" style={{maxWidth:'500px',justifyContent:'center'}}>
       <div className="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="log-in-tab">
 
-      <div style={{maxWidth:'400px',paddingTop:'30px'}}>
+      <div style={{maxWidth:'400px',paddingTop:'10px'}}>
         <h2>Welcome back!</h2>
         <p style={{fontSize:'12px'}}>Log in with e-mail and password</p>
         <br />
         <form onSubmit={handleLogin}>
-          <div className="flexwrapper input-group mb-2">
+          <div className="input-group mb-2">
           <TextField
             className="form-control btn-dark"
             type="text"
             color="secondary"
             label="E-mail"
             autoComplete="true"
-            placeholder="Type here..."
             id="email"
             variant="outlined"
             onChange={(e) => setForm({ ...form, email: e.target.value })}
@@ -126,13 +125,12 @@ const LoginPage = () => {
 
           <br />
 
-  				<div className="flexwrapper input-group mb-2">
+  				<div className="input-group mb-2">
           <TextField
             type="password"
             label="Password"
             color="secondary"
             id="password"
-            placeholder="Type here..."
             autoComplete="current-password"
             className="form-control btn-dark"
             variant="outlined"

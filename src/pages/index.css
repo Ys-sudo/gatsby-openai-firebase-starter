@@ -22,7 +22,7 @@ pre {
     word-wrap: break-word;       /* Internet Explorer 5.5+ */
 }
 .recipe{
-  padding:2.5% 5%;margin-top:2%;border-radius:10px;box-shadow: -5px 5px 10px rgb(23 19 43 / 10%);
+  padding:2.5% 5%;margin-top:20px;border: 1px solid #9c27b080;border-radius:10px;box-shadow: -5px 5px 10px rgb(23 19 43 / 10%);
   height: fit-content;
 }
 .field {
@@ -32,3 +32,19 @@ pre {
 .dmode-light{color:white;}
 .dmode-imp{color: whitesmoke;}
 .dmode{color:#f5f5f5;}
+.flexwrapper{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+input.dmode {
+  color: white !important;
+}
+.rtime{
+  border: 1px solid #9c27b080;border-radius:10px;
+  padding: 5px 10px;
+}
+p.styled {
+  border-bottom: 1px solid #9c27b080;
+  padding-bottom: 20px;
+}

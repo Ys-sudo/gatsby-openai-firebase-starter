@@ -14,12 +14,12 @@ const about = () => {
 const Footer = () => {
   return(
   <>
-  <div style={{display:'flex',position:'fixed',bottom:'15px',right:'10px',maxWidth:'60%',marginLeft:'40%',justifyContent:'space-evenly',alignItems:'center',flexWrap:'wrap'}}>
-    <Button style={{margin:'10px'}} variant="outlined" color="secondary" onClick={earlyAccess}>
-    Early Access
-    </Button>
-    <Button style={{margin:'10px'}} variant="outlined" color="secondary" onClick={about}>
+  <div style={{display:'flex',position:'fixed',bottom:'10px',right:'10px',maxWidth:'60%',marginLeft:'40%',justifyContent:'flex-end',alignItems:'center',zIndex:'0',flexWrap:'wrap'}}>
+    <Button style={{margin:'10px',fontSize:'12px'}} color="secondary" onClick={about}>
     About
+    </Button>
+    <Button style={{margin:'10px',fontSize:'12px'}} color="secondary" onClick={earlyAccess}>
+    Early Access
     </Button>
   </div>
   <div style={{position:'fixed',left:'10px',bottom:'75px'}}>

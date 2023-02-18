@@ -61,7 +61,7 @@ export default function Home() {
 let [timers, setTimers] = React.useState([]);
 const [time, setTime] = React.useState("");
 useEffect(() => {
-
+    if (!auth.currentUser) {document.getElementById('log').innerText = 'Log in'}
     const db = getDatabase();
     const recipesRef = ref(db, 'QA/');
     onValue(recipesRef, (snapshot) => {
@@ -73,7 +73,8 @@ useEffect(() => {
 
       //console.log(objects)
       let datas = document.getElementById('render');
-
+      console.log(objects.length)
+      document.getElementById('numofque').innerHTML =  objects.length;
       for(let i = 0;i<objects.length;i++){
 
       let container = document.createElement("div");
@@ -88,7 +89,7 @@ useEffect(() => {
       let make = document.createElement("pre");
 
       let ings = document.createElement("p");
-      let list = document.createElement("ul");
+
 
 
     //  container.classList.add('recipe',objects[i][1].question.replace(/ /g,'-').toLowerCase(),objects[i][1].time.replace(/\\/g,'0'),objects[i][1].level.toLowerCase());
@@ -101,11 +102,9 @@ useEffect(() => {
       rimg.classList.add('rimage');
       wrapper.classList.add('flexwrapper');
       desc.classList.add('desc');
-      rname.classList.add('styled');
-      rtime.classList.add('styled');
 
-      rname.innerHTML = '<b>Question:</b>&nbsp;'+objects[i][1].question;
-      rtime.innerHTML = ' |&nbsp;<b class="rtime">'+objects[i][1].date.replace(/\/$/g,'.')+'</b>&nbsp;🕓';
+      rname.innerHTML = '<p class="styled" style="margin-bottom:0px"><b>Question:</b>&nbsp;'+objects[i][1].question+'</p>';
+      rtime.innerHTML = '<span class="rtime">'+objects[i][1].date+'</span>';
 
       how.innerHTML = '<b>Answer:</b>';
       make.innerText = objects[i][1].answer;
@@ -115,8 +114,6 @@ useEffect(() => {
       rimg.appendChild(wrapper);
 
       desc.appendChild(ings);
-      desc.appendChild(list);
-
       desc.appendChild(how);
       desc.appendChild(make);
       //desc.appendChild(button);
@@ -143,7 +140,7 @@ useEffect(() => {
   }, []);
   return(
   <>
-  <div style={{width:'90%',padding:'10% 5%',minHeight:'600px'}}>
+  <div style={{width:'90%',padding:'10% 5%',paddingBottom:'200px',minHeight:'600px'}}>
   <Button color="secondary" variant="outlined" style={{position:'fixed',top:'10px',right:'10px',marginLeft:'10px',marginRight:'10px'}} onClick={logout}><span id="log" className="small">Log out</span></Button>
   <Button color="secondary" variant="contained" style={{position:'fixed',top:'10px',left:'10px',marginLeft:'10px',marginRight:'10px'}} onClick={askAi}><span className="small">ASK AI A QUESTION</span></Button>
   <div style={{display:'flex',flexWrap:'wrap',alignItems:'baseline',justifyContent:'space-between'}}>
@@ -153,7 +150,7 @@ useEffect(() => {
   <h2>Welcome to the OpenAI Q&A archives.</h2>
   <Typewriter
       onInit={(typewriter) => {
-        typewriter.typeString("<span style='color:#9c27b0;font-size:2em;'>who asks and search goes further ahead...</span>")
+        typewriter.typeString("<span style='color:#9c27b0;font-size:2em;'>who asks not stray...</span>")
           .pauseFor(2500)
           .deleteAll()
           .start();
@@ -175,7 +172,7 @@ useEffect(() => {
 
   <Card sx={{ minWidth: '95%',marginTop:'25px',marginBottom:'25px',padding:'1% 2.5%' }}>
   <CardContent>
-  <h3 style={{color:'#111'}}>Search & filter questions:</h3>
+  <h3 style={{color:'#111'}}>Search & filter <b id="numofque"></b> questions:</h3>
     <div
       id="ui"
       style={{
@@ -378,9 +375,6 @@ function darkMode() {
   for (let i=0; i<document.querySelectorAll("p").length;i++){
     document.querySelectorAll("p")[i].classList.add('dmode');
   }
-  for (let i=0; i<document.querySelectorAll("label").length;i++){
-    document.querySelectorAll("label")[i].classList.add('dmode');
-  }
 
   for (let i=0; i<document.querySelectorAll("pre").length;i++){
     document.querySelectorAll("pre")[i].classList.add('dmode');
@@ -431,10 +425,6 @@ for (let i=0; i<document.querySelectorAll("label").length;i++){
     for (let i=0; i<document.querySelectorAll("p").length;i++){
       document.querySelectorAll("p")[i].classList.remove('dmode');
     }
-    for (let i=0; i<document.querySelectorAll("label").length;i++){
-      document.querySelectorAll("label")[i].classList.remove('dmode');
-    }
-
     for (let i=0; i<document.querySelectorAll("pre").length;i++){
     document.querySelectorAll("pre")[i].classList.remove('dmode');
   }

@@ -82,6 +82,7 @@ export default class FormMsg extends React.Component {
                 className="input form-control"
                 label="Name"
                 color="secondary"
+                style={{minWidth:'100%'}}
                 type={'text'}
                 name={'Name'}
                 onChange={this.handleChange}
@@ -99,6 +100,7 @@ export default class FormMsg extends React.Component {
                 name={'email'}
                 label="E-mail"
                 color="secondary"
+                style={{minWidth:'100%'}}
                 onChange={this.handleChange}
                 id={'emailx'}
                 required={true}
@@ -115,6 +117,7 @@ export default class FormMsg extends React.Component {
                 name={'phone'}
                 label="Phone number"
                 color="secondary"
+                style={{minWidth:'100%'}}
                 onChange={this.handleChange}
                 id={'phonex'}
                 required={true}
@@ -132,6 +135,7 @@ export default class FormMsg extends React.Component {
                 multiline={true}
                 label="Message"
                 minRows="3"
+                style={{minWidth:'100%'}}
                 onChange={this.handleChange}
                 id={'msgx'}
                 required={true}

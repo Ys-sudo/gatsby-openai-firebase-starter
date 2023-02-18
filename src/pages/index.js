@@ -82,16 +82,17 @@ let response
       max_tokens: Number(maxTokens),
     }).then(response => {
       console.log(response.data.choices[0].text)
-      let answer = document.createElement("pre")
+      let answer = document.createElement("p");
+      answer.classList.add('styled');
       let archivalq = document.createElement("p")
-      let separator = document.createElement("hr")
+
       archivalq.style.fontFamily = 'Courier new'
       answer.style.fontFamily = 'Courier new'
-      answer.innerHTML = response.data.choices[0].text
+      answer.innerHTML = '<b>A:</b>' + response.data.choices[0].text
       archivalq.innerHTML = '<b>Q:</b>' + document.getElementById('question').value;
       document.getElementById('response').appendChild(archivalq)
       document.getElementById('response').appendChild(answer)
-      document.getElementById('response').appendChild(separator)
+
       document.getElementById('loading-indicator').style.display = 'none'
       GetData(response.data.choices[0].text)
       });
@@ -109,7 +110,7 @@ export default function Home() {
   });
   return(
   <>
-  <div style={{width:'90%',padding:'10% 5%',minHeight:'600px'}}>
+  <div style={{width:'90%',padding:'10% 5%',paddingBottom:'200px',minHeight:'600px'}}>
   <Button color="secondary" variant="contained" style={{position:'fixed',top:'10px',left:'10px',marginLeft:'10px',marginRight:'10px'}} onClick={explore}><span className="small">Q&A archives</span></Button>
   <Button color="secondary" variant="outlined" style={{position:'fixed',top:'10px',right:'10px',marginLeft:'10px',marginRight:'10px'}} onClick={logout}><span id="log" className="small">Log out</span></Button>
   <div style={{display:'flex',flexWrap:'wrap',alignItems:'baseline',justifyContent:'space-between'}}>
