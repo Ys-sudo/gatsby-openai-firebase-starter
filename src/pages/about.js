@@ -70,10 +70,10 @@ const AboutPage = () => {
       }}
     />
   <div>
-  <p><a href="https://openai.com/api/pricing" style={{color:'red'}} target="_blank" rel="noopener noreferrer">Every request to the OpenAI model API costs real money</a>, so does the requests made to the <a href="https://firebase.google.com/pricing" style={{color:'red'}} target="_blank" rel="noopener noreferrer">firebase database</a>, because of that the access is restricted only for authorised personel. Everyone is welcome to browse the archives. But if the project generates traffic the database and requests will be quite expensive so every kind of donation is appriciated.</p>
+  <p><a href="https://openai.com/api/pricing" style={{color:'#9c27b0'}} target="_blank" rel="noopener noreferrer">Every request to the OpenAI model API costs real money</a>, so does the requests made to the <a href="https://firebase.google.com/pricing" style={{color:'#9c27b0'}} target="_blank" rel="noopener noreferrer">firebase database</a>, because of that the access is restricted only for authorised personel. Everyone is welcome to browse the archives. But if the project generates traffic the database and requests will be quite expensive so every kind of donation is appriciated.</p>
   <p>We are looking forward to developing the project and making it even more awesome. The project is open-source and available on github for cloning as a starter template for free for everyone.</p>
   <p><b>How to use the project?</b></p>
-  <p>Feel free to browse the Q&A archives, this will be free forever for everyone as sample use-cases. For now only authorised members can use the project to ask questions as we are trying to estimate the costs of maintaining it, please <a style={{color:'red'}} href="/early-access">contact us</a> if you would like to join us in this <b>great quest of making AI accesible for everyone at low cost</b>.</p>
+  <p>Feel free to browse the Q&A archives, this will be free forever for everyone as sample use-cases. For now only authorised members can use the project to ask questions as we are trying to estimate the costs of maintaining it, please <a style={{color:'#9c27b0'}} href="/early-access">contact us</a> if you would like to join us in this <b>great quest of making AI accesible for everyone at low cost</b>.</p>
   </div>
 
 

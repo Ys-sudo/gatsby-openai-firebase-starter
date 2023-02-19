@@ -84,8 +84,9 @@ let response
       console.log(response.data.choices[0].text)
       let answer = document.createElement("p");
       answer.classList.add('styled');
+      answer.style.color = '#111';
       let archivalq = document.createElement("p")
-
+      archivalq.style.color = '#111';
       archivalq.style.fontFamily = 'Courier new'
       answer.style.fontFamily = 'Courier new'
       answer.innerHTML = '<b>A:</b>' + response.data.choices[0].text

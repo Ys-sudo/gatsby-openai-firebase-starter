@@ -9,6 +9,7 @@ import Firebase from "../../config/firebase";
 import { signOut } from "firebase/auth";
 import FormMsg from "../components/form"
 import Footer from "../components/footer"
+import Typewriter from 'typewriter-effect';
 
 const about = () => {
     navigate('/about')
@@ -66,6 +67,18 @@ const EarlyaccessPage = () => {
   <span><label>Dark mode</label><Switch {...label} onChange={setdarkMode} defaultChecked color="secondary" /></span>
   </div>
   <h2>OpenAI - Q&A : early access project</h2>
+  <Typewriter
+      onInit={(typewriter) => {
+        typewriter.typeString("<span style='color:#9c27b0;font-size:2em;'>who asks not stray...</span>")
+          .pauseFor(2500)
+          .deleteAll()
+          .start();
+      }}
+      options={{
+        autoStart: true,
+        loop: true,
+      }}
+    />
   <div>
   <p>Every query to the AI model costs real money, so the access is restricted only for authorised personel. Everyone is welcome to browse the archives.</p>
   <p>If you are interested in joining the project as a publisher please fill the contact form below.</p>
@@ -135,11 +148,11 @@ function darkMode() {
   for (let i=0; i<document.querySelectorAll("pre").length;i++){
     document.querySelectorAll("pre")[i].classList.add('dmode');
   }
-
+  for (let i=0; i<document.querySelectorAll("input").length;i++){
+    document.querySelectorAll("input")[i].classList.add('dmode');
+  }
 /*
-for (let i=0; i<document.querySelectorAll("input").length;i++){
-  document.querySelectorAll("input")[i].classList.add('dmode');
-}
+
 for (let i=0; i<document.querySelectorAll("label").length;i++){
   document.querySelectorAll("label")[i].classList.add('dmode');
 }
@@ -188,11 +201,11 @@ for (let i=0; i<document.querySelectorAll("label").length;i++){
     for (let i=0; i<document.querySelectorAll("pre").length;i++){
     document.querySelectorAll("pre")[i].classList.remove('dmode');
   }
-
-  /*
   for (let i=0; i<document.querySelectorAll("input").length;i++){
     document.querySelectorAll("input")[i].classList.remove('dmode');
   }
+  /*
+
   for (let i=0; i<document.querySelectorAll("label").length;i++){
     document.querySelectorAll("label")[i].classList.remove('dmode');
   }

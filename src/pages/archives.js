@@ -172,7 +172,7 @@ useEffect(() => {
 
   <Card sx={{ minWidth: '95%',marginTop:'25px',marginBottom:'25px',padding:'1% 2.5%' }}>
   <CardContent>
-  <h3 style={{color:'#111'}}>Search & filter <b id="numofque"></b> questions:</h3>
+  <h3 style={{color:'#111'}}>Search & filter <b id="numofque" style={{color:'#9c27b0',fontWeight:'800'}}></b> questions:</h3>
     <div
       id="ui"
       style={{

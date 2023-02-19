@@ -149,7 +149,7 @@ export default class FormMsg extends React.Component {
           </div>
 
           <div className="field">
-            <Button variant="contained" color="secondary" type="submit" onClick={showFileSize}>
+            <Button variant="contained" color="secondary" type="submit">
               send
             </Button>
           </div>
@@ -165,13 +165,4 @@ export default class FormMsg extends React.Component {
       </>
     )
   }
-}
-function showFileSize() {
-let fileinput = document.getElementById('fileinput');
-let file = fileinput.files[0];
-
-if (file !== undefined){
-console.log(file.size);
-}
-console.log('message sent!')
 }
