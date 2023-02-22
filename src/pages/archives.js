@@ -100,7 +100,7 @@ useEffect(() => {
       desc.classList.add('desc');
 
       rname.innerHTML = '<p class="styled" style="margin-bottom:0px"><b>Question:</b>&nbsp;'+objects[i][1].question+'</p>';
-      rtime.innerHTML = '<span class="rtime">'+objects[i][1].date+'</span>';
+      rtime.innerHTML = '<span class="rtime">'+objects[i][1].date.replace(/\//g, '.')+'</span>';
 
       how.innerHTML = '<b>Answer:</b>';
       make.innerText = objects[i][1].answer;
