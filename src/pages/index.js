@@ -207,7 +207,7 @@ const GetData = (response) => {
          question: que,
          answer: answer,
          time: ms,
-         date: day.toLocaleDateString(),
+         date: day.toLocaleDateString().replace(/\//g, '.'),
        },
        (error) => {
          if (error) {

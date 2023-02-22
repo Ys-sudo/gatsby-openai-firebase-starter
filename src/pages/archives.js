@@ -54,10 +54,6 @@ function removeDuplicates(arr) {
 const label = { inputProps: { 'aria-label': 'Dark Mode' } };
 
 export default function Home() {
-  {/*useEffect(() => {
-    if (!auth.currentUser) {document.getElementById('log').innerText = 'Log in'}
-
-  });*/}
 let [timers, setTimers] = React.useState([]);
 const [time, setTime] = React.useState("");
 useEffect(() => {
@@ -117,7 +113,7 @@ useEffect(() => {
       desc.appendChild(how);
       desc.appendChild(make);
       //desc.appendChild(button);
-      container.classList.add('recipe',objects[i][1].question.replace(/ /g,'-').toLowerCase(),objects[i][1].date.replace(/\\/g,'0'));
+      container.classList.add('recipe',objects[i][1].question.replace(/ /g,'-').toLowerCase(),objects[i][1].date.replace(/\//g, '.'));
 
       container.appendChild(rimg);
       container.appendChild(desc);
@@ -127,11 +123,10 @@ useEffect(() => {
       darkMode();
       }
 
-      setTimers((timers) => [...timers, objects[i][1].date.replace(/\/$/g,'.')])
+      setTimers((timers) => [...timers, objects[i][1].date.replace(/\//g, '.')])
 
 
       }
-
 
     })
 
@@ -212,7 +207,13 @@ useEffect(() => {
             color="secondary"
             onChange={handleTimeChange}
           >
-          {removeDuplicates(timers).map((time) => (
+          {removeDuplicates(timers).sort(function(a, b) {
+              var parseDate = function parseDate(dateAsString) {
+                      var dateParts = dateAsString.split(".");
+                      return new Date(parseInt(dateParts[2], 10), parseInt(dateParts[1], 10) - 1, parseInt(dateParts[0], 10));
+                  };
+              return parseDate(b) - parseDate(a);
+          }).map((time) => (
           <MenuItem
             value={time}
             key={time}> {time} </MenuItem>
@@ -339,7 +340,7 @@ const GetData = (response) => {
 
 function darkMode() {
   var hours = new Date().getHours();
-  console.log(hours);
+  //console.log(hours);
   if(global.localStorage.getItem('theme')===null)
   {
     if(hours>=6 && hours<19)

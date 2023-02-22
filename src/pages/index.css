@@ -41,8 +41,9 @@ input.dmode {
   color: white !important;
 }
 .rtime{
-  border: 1px solid #9c27b080;border-radius:10px;
+  background: #9c27b0;border-radius:10px;
   padding: 5px 10px;
+  color: white;
 }
 p.styled {
   border-bottom: 1px solid #9c27b080;
