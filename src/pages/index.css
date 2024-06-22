@@ -49,3 +49,8 @@ p.styled {
   border-bottom: 1px solid #9c27b080;
   padding-bottom: 20px;
 }
+.styled > a {
+  color: #9c27b0;
+  text-decoration: none;
+  font-weight: bold;
+}

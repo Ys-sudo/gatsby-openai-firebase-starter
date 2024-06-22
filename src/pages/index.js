@@ -12,7 +12,6 @@ import './index.css'
 import { auth } from "../../config/firebase";
 import Firebase from "../../config/firebase";
 import { signOut } from "firebase/auth";
-import { getDatabase, ref, update, onValue } from "firebase/database";
 import Typewriter from 'typewriter-effect';
 import Footer from "../components/footer"
 

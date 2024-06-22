@@ -22,6 +22,7 @@ import { auth } from "../../config/firebase";
 import Firebase from "../../config/firebase";
 import { signOut } from "firebase/auth";
 import { getDatabase, ref, update, onValue } from "firebase/database";
+const _ = require("lodash");
 
 const logout = () => {
 
@@ -49,7 +50,9 @@ function removeDuplicates(arr) {
  }
 
 
-
+ const explore = () => {
+  navigate('/archives')
+}
 
 const label = { inputProps: { 'aria-label': 'Dark Mode' } };
 
@@ -87,8 +90,7 @@ useEffect(() => {
       let ings = document.createElement("p");
 
 
-
-    //  container.classList.add('recipe',objects[i][1].question.replace(/ /g,'-').toLowerCase(),objects[i][1].time.replace(/\\/g,'0'),objects[i][1].level.toLowerCase());
+      console.log(objects[i][1])
 
       rimg.addEventListener('click',function() {
         this.parentNode.childNodes[1].classList.add('visible');
@@ -98,8 +100,8 @@ useEffect(() => {
       rimg.classList.add('rimage');
       wrapper.classList.add('flexwrapper');
       desc.classList.add('desc');
-
-      rname.innerHTML = '<p class="styled" style="margin-bottom:0px"><b>Question:</b>&nbsp;'+objects[i][1].question+'</p>';
+      
+      rname.innerHTML = `<p class="styled" style="margin-bottom:0px"><a  href='/questions/${_.kebabCase(objects[i][1].question.slice(0,100))}/'><b>Question:</b>&nbsp;`+objects[i][1].question+'</a></p>';
       rtime.innerHTML = '<span class="rtime">'+objects[i][1].date.replace(/\//g, '.')+'</span>';
 
       how.innerHTML = '<b>Answer:</b>';
@@ -113,7 +115,7 @@ useEffect(() => {
       desc.appendChild(how);
       desc.appendChild(make);
       //desc.appendChild(button);
-      container.classList.add('recipe',objects[i][1].question.replace(/ /g,'-').toLowerCase(),objects[i][1].date.replace(/\//g, '.'));
+      container.classList.add('recipe',objects[i][1].question.split(' ').join('-'),objects[i][1].date.replace(/\//g, '.'));
 
       container.appendChild(rimg);
       container.appendChild(desc);
