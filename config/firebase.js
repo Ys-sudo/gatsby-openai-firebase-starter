@@ -1,5 +1,4 @@
 import { initializeApp } from "firebase/app";
-import { firebaseConfig } from "./firebase.config";
 import  firebase from 'firebase/compat/app'
 import 'firebase/compat/analytics'
 import 'firebase/compat/database'

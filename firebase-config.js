@@ -2,7 +2,6 @@
 const firebase = require('firebase/compat/app');
 require('firebase/compat/analytics');
 require('firebase/compat/database');
-require('firebase/auth');
 require('dotenv').config();
 
 const config = {
@@ -18,6 +17,5 @@ const config = {
 firebase.initializeApp(config);
 
 const DatabaseRef = firebase.database().ref();
-//const auth = firebase.auth();
 
 module.exports = { DatabaseRef, firebase };
