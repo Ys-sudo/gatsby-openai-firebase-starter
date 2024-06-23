@@ -4,7 +4,7 @@ import 'firebase/compat/analytics'
 import 'firebase/compat/database'
 import 'firebase/auth'
 import { getAuth, GoogleAuthProvider } from "firebase/auth";
-require('dotenv').config();
+
 
 const config = {
     apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
