@@ -1,4 +1,3 @@
-import { initializeApp } from "firebase/app";
 import  firebase from 'firebase/compat/app'
 import 'firebase/compat/analytics'
 import 'firebase/compat/database'
@@ -16,9 +15,12 @@ const config = {
     appId: process.env.REACT_APP_FIREBASE_APP_ID,
   };
 
-export const Firebase = initializeApp(config);
-export const auth = getAuth();
-export const Providers = { google: new GoogleAuthProvider() };
 
 firebase.initializeApp(config);
+
+export const auth = getAuth();
+
+export const Providers = { google: new GoogleAuthProvider() };
+
+
 export default firebase;
