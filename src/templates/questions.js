@@ -2,6 +2,7 @@ import React from 'react';
 import Button from '@mui/material/Button';
 import { navigate } from 'gatsby-link'
 import Footer from "../components/footer";
+import '../pages/index.css'
 
 const explore = () => {
   navigate('/archives')
